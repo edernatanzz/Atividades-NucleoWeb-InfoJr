@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-verde:#7ED321 ;
+    --cor-2: #1C4701;
+    --cor-3:#7ED32166;
+
+    
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+    text-align: left;
+}
+a{
+    text-decoration: none;
+}
+
+/* Navigation */
+.nav-container {
+    opacity: 1; 
+    background: #FFFFFF;
+    height: 120px;
+}
+
+.wrapper2 {
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+}
+
+
+
+nav ul {
+    display: flex;
+}
+
+.logo a{
+    color: #000000;
+    font-family: Open Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+    text-transform: lowercase;
+    width: 281px;
+    height: 65px;
+    top: 27px;
+    left: 15px;
+    gap: 0px;
+    opacity: 0px;
+    margin: 0 3rem;
+
+
+}
+
+nav .logo{
+    font-family: Open Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+
+}
+nav span{
+    color: var(--cor-verde);
+}
+
+.nav-items li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.nav-itens li:nth-last-of-type(1){
+    margin: 0;
+}
+
+.nav-items li a {
+    text-transform: uppercase;
+    color: #000000;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+    text-align: left;
+    width: 112px;
+    height: 22px;
+    top: 49px;
+    left: 1047px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+.btn {
+    
+    height: 40px;
+    color: var(--cor-3); 
+    background:var(--cor-3); 
+    border-radius: 15px;
+    padding: 12px 40px; 
+    text-decoration: none; 
+}
+
+.btn:hover {
+    background: var(--cor-verde); 
+}
+
+.btn:focus {
+    outline: none;
+}
+
+
+.btn span {
+   color: var(--cor-2);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+
+}
+
+header h1{
+    height: 65px;
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Open Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+
+
+}
+header p{
+    margin-top: 1rem;
+    width: 687px;
+    height: 176px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: justify;
+    
+
+
+}

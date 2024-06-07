@@ -1,0 +1,23 @@
+<svg width="230" height="230" viewBox="0 0 230 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_5_52)">
+<g clip-path="url(#clip0_5_52)">
+<rect x="65" y="40" width="100" height="100" rx="50" fill="#E5E5E5"/>
+<line x1="66.3536" y1="40.6464" x2="165.354" y2="139.646" stroke="#0065FF"/>
+<line x1="65.6464" y1="139.646" x2="164.646" y2="40.6465" stroke="#0065FF"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_5_52" x="0" y="0" width="230" height="230" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="25"/>
+<feGaussianBlur stdDeviation="32.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_5_52"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_5_52" result="shape"/>
+</filter>
+<clipPath id="clip0_5_52">
+<rect x="65" y="40" width="100" height="100" rx="50" fill="white"/>
+</clipPath>
+</defs>
+</svg>

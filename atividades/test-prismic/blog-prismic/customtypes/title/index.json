@@ -1,0 +1,33 @@
+{
+  "format": "custom",
+  "id": "title",
+  "label": "Title",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "uid",
+          "placeholder": ""
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "img": {
+        "type": "Image",
+        "config": {
+          "label": "img",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    }
+  }
+}

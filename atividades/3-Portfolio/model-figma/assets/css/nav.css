@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.logo{
+    color: black;
+    letter-spacing: 2px;
+    font-family: Be Vietnam;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: left;
+
+
+}
+
+.nav-colum1{
+    width: 470px;
+    display: flex;  
+    align-items: flex-start ;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 25px 65px 0px #00000026;
+    height: 8vw;
+    padding: 30px, 87px, 30px, 87px;
+    gap: 511px;
+    max-width: 100%;
+}
+
+.nav-colum2{
+    width: 285px;
+    max-width: 100%;
+    
+    
+}
+.nav-colum2 ul{
+display: flex;
+justify-content:space-between;
+align-items: center;
+flex-direction: row;
+}
+.nav-colum2-1{
+    width: 111px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.nav-colum2-2{
+    width: 124px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center center;
+}
+
+.nav-colum2-2 li ,a{
+color: black;
+font-family: 'Be Vietnam',sans-serif;
+font-size: 14px;
+font-weight: 400;
+line-height: 20.45px;
+text-align: left;
+
+}

@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  gap: 30px;
+}
+
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-bar {
+    padding: 1rem;
+  }
+
+  .nav-item {
+    display: none;
+  }
+
+  .dark-button {
+    display: flex;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .mobile-menu-icon button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .mobile-menu .nav-item {
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  .mobile-menu .dark-button {
+    display: block;
+    padding: 1rem 2rem;
+  }
+
+  .mobile-menu .dark-button button {
+    width: 100%;
+  }
+
+  .open {
+    display: block;
+  }
+}
+
+.header-mobile {
+  background-color: transparent;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  position: relative;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.mobile-menu {
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+  max-height: 100vw;
+}
+
+.mobile-menu-icon {
+  position: absolute;
+}
+
+.mobile-menu-icon img{
+  width: 30px;
+  height: 30px;
+}
+
+.mobile-menu.open {
+  height:60vw;
+  /*height: 480vw;*/
+  max-height: 600vw;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: var(--h1-color);
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  transition: background 0.3s;
+}
+
+
+.icons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.icons ul{
+  gap: 100px;
+  flex-direction: row;
+}
+
+.itens_img-mobile {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.itens_img-mobile li {
+  display: inline-block;
+  flex-direction: row;
+}
+
+.itens_img-mobile img {
+  width: 24px;
+  height: 24px;
+}
+
+

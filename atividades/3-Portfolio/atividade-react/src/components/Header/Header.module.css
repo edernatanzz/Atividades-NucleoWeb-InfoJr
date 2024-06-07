@@ -1,0 +1,152 @@
+:root{
+    --blue: #0065FF;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color: var(--blue);
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.header{
+    width: 100%;
+    height: 72px;
+    padding: 30px 87px 30px 87px;
+    gap: 511px;
+    opacity: 0px;
+    max-width: 100%;  
+    box-shadow: 0px 25px 65px 0px #00000026;
+}
+.navbar{ /*organizando itens no menu */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.logo{
+    color: black;
+    font-family: 'Be Vietnam Pro',sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    width: 130px;
+}
+.itens_nav1{
+    display: flex;
+    justify-content:space-evenly;
+    gap: 20px;
+}
+.itens_nav2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 50px;
+}
+.itens_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px;
+}
+.itens_dark{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 5px;
+}
+.itens_dark h6{
+    font-family:  'Be Vietnam Pro';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20.45px;
+    text-align: left;
+}
+/* Css do theme dark*/
+.itens_checkbox{
+   padding: 0;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: background 0.2s linear;
+}
+.dark {
+    background-color: #232c35;
+}
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+.label{
+    background-color: #E5E5E5;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    position: relative;
+    height: 22px;
+    width: 40px;
+}
+.label .ball {
+    background-color:#3C3B3A;
+    border-radius: 50px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 18px;
+    width: 18px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball {
+    transform: translateX(21px);
+}
+/* modulo para os icons */
+.dark {
+    background-color: var(--color-dark-claro);
+    color: #fff;
+}
+.dark .itens_nav1 a {
+    color: #fff;
+}
+.dark .itens_dark li {
+    color: #fff;
+}
+.iconDark {
+    filter: invert(1) grayscale(1);
+}
+.navbar{
+    max-width: 1280px;
+}
+.icon_navbar{
+    display: none;
+    flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+    .header{
+        width: 100%;
+        padding: 1.5rem;
+    }   
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .itens_nav1 li, 
+    .itens_nav2 li, 
+    .itens_img li, 
+    .itens_dark li {
+        display: none;
+    }
+}

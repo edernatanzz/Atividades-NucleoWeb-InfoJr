@@ -1,0 +1,150 @@
+body.dark-mode {
+  background-color: var(--color-dark);
+  color: #fff;
+}
+a{
+  text-decoration: none;
+}
+
+.dark-mode a{
+  color: white;
+}
+
+.dark-mode span {
+  color: white;
+}
+.dark-mode .sections button{
+  background-color: var(--color-dark-claro);
+  border-color: #fff;
+  color: #fff;
+}
+.dark-mode .sections h1{
+  background-color:var(--color-dark);
+  color: #fff;
+}
+.dark-mode .sections h2{
+  color: #fff;
+}
+.dark-mode .hr{
+  background-color: #fff;
+}
+
+.dark-mode .hr2{
+  background-color: #fff;
+}
+
+.dark-mode .sections span{
+  color: white;
+}
+
+
+/* modulo para os icons */
+.dark {
+  background-color: var(--color-dark-claro);
+  color: #fff;
+}
+
+.dark .itens_nav1 a {
+  color: #fff;
+}
+
+.dark .itens_dark li {
+  color: #fff;
+}
+
+.iconDark {
+  filter: invert(1) grayscale(1);
+}
+
+.iconDark{
+  background-color: #fff;
+}
+
+.itens_dark{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 10px;
+
+}
+
+.itens_dark li{
+
+  font-family:  'Be Vietnam Pro';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20.45px;
+  text-align: left;
+
+}
+
+/* Css do theme dark*/
+.itens_checkbox{
+ padding: 0;
+ margin: 0;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: background 0.2s linear;
+}
+
+.dark {
+  background-color: #232c35;
+  
+}
+.checkbox{
+  opacity: 0;
+  position: absolute;
+}
+.label{
+  background-color: #E5E5E5;
+  border-radius: 50px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+  
+
+  height: 22px;
+  width: 40px;
+
+}
+
+.label .ball {
+  background-color:#3C3B3A;
+  border-radius: 50px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 17.25px;
+  height: 17.29px;
+  top: 2.36px;
+  left: 3px;
+  gap: 0px;
+  opacity: 0px;
+
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(18px);
+}
+
+
+.dark-mode .nav-list ul li a {
+  color: white;
+}
+
+.dark-mode .icons img {
+  filter: invert(1) grayscale(1);
+}
+
+.dark-mode .mobile-menu.open {
+background-color: var(--color-dark);
+}
+

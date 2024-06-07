@@ -1,0 +1,50 @@
+{
+  "format": "custom",
+  "id": "card",
+  "label": "card",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "UID"
+        },
+        "type": "UID"
+      },
+      "tag": {
+        "type": "Text",
+        "config": {
+          "label": "tag",
+          "placeholder": ""
+        }
+      },
+      "titulocard": {
+        "type": "Text",
+        "config": {
+          "label": "titulocard",
+          "placeholder": ""
+        }
+      },
+      "subtitulo": {
+        "type": "Text",
+        "config": {
+          "label": "subtitulo",
+          "placeholder": ""
+        }
+      },
+      "image": {
+        "type": "Image",
+        "config": {
+          "label": "image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone"
+      }
+    }
+  }
+}
