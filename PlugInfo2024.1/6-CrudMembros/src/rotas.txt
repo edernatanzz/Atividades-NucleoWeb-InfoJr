@@ -1,0 +1,7 @@
+
+rota de criar usuario: POST => http://localhost:3000/createUser
+rota pra retornar usuario por Ids GET => http://localhost:3000/user/1
+rota pra retornar usuario por email GET =>http://localhost:3000/user/email/example@gmail.com
+rota pra retornar um ou mais usuarios por nome GET=> http://localhost:3000/user/name/example01
+rota pra deletar usuario por Id DELETE => http://localhost:3000/delete/1
+rota pra atualizar o usuario por Id (Não permitir atualizar usuario caso já haja outro com o email) PUT => http://localhost:3000/user/1

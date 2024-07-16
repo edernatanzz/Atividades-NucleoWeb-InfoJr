@@ -1,0 +1,334 @@
+.pag-individual-produto{
+    width: 100vw;
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    min-height: 100vh;
+    margin-bottom: 50px;
+}
+
+.individual-produto{
+    width: 85%;
+    margin-top: 5vw;
+    font-family: var(--montserrat-font);
+    display: flex;
+    flex-direction: row;
+    gap:5%;
+}
+
+.individual-produto-img{
+    width: 52%;
+    height:40vw;
+    max-height: 477px;
+    object-fit: cover;
+}
+
+.individual-produto-info{
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+    gap:3%;
+
+}
+
+.individual-produto-info .row{
+    display: flex;
+    flex-direction: row;
+    gap:2%;
+}
+
+.row .individual-produto-av{
+    width: clamp(80px,15vw,136px);
+    height: max-content;
+}
+
+.individual-produto-info h1{
+    font-size: clamp(15px,3vw,30px);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.individual-produto-info h2{
+    font-size: clamp(12px,1.8vw,25px);
+    font-weight: 500;
+}
+
+.individual-produto-info .promocao-frete{
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+
+    font-weight: 500;
+    font-size:clamp(12px,2.2vw,20px);
+    letter-spacing: 0.05em;
+}
+
+.individual-produto-info .tag1{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 5%;
+    background: #F37C0E;
+    border-radius: 20px;
+
+
+
+    color: #FFFFFF;
+
+}
+
+.individual-produto-info .tag2{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 5%;
+    background: #04FA49;
+    border-radius: 20px;
+
+    color: #FFFFFF;
+
+}
+
+.individual-produto h3{
+    font-weight: 700;
+    font-size: clamp(12px,2.3vw,25px);
+    line-height: 30px;
+    letter-spacing: 0.05em;
+
+    color: #DA667B;
+
+
+}
+
+.individual-produto-info h3 span{
+    text-decoration-line: line-through;
+    color: #000000;
+    opacity: 0.6;
+
+}
+
+.individual-produto-info p{
+
+    font-weight: 400;
+    font-size: clamp(12px,1.8vw,20px);
+    line-height: 24px;
+    letter-spacing: 0.05em;
+
+    color: #000000;
+    margin-bottom: 3vw;
+
+}
+
+.individual-produto-info button{
+
+    width: 100%;
+    max-height: 72px;
+    padding: 1.4vw 0;
+    border-radius: 30px;
+
+    font-weight: 500;
+    font-size: clamp(12px,2.2vw,30px);
+    letter-spacing: 0.05em;
+    border: none;
+
+    color: #FFFFFF;
+    margin-top: 3%;
+    max-width: 542px;
+}
+
+.individual-produto .botao-comprar{
+    background: #C4324D;
+    margin-top: 3vw;
+}
+
+.individual-produto .botao-carrinho{
+
+    background: #2576C1;
+}
+
+.individual-produto-info label{
+    font-size: clamp(8px,1.5vw,15px);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+}
+
+.individual-produto-info input{
+
+    margin-left: 1vw;
+    background: var(--grey);
+    border: 1px solid #000000;
+    border-radius: 50px;
+    font-size: clamp(10px,1.5vw,15px);
+
+    width: 4.5vw;
+    height: 2.5vw;
+    padding-left: 5%;
+
+}
+
+.individual-produto-descricao{
+    width: 85%;
+    font-family: var(--montserrat-font);
+    color: black;
+    letter-spacing: 0.05em;
+    margin-bottom: 5vw;
+    margin-top: 10px;
+}
+
+.individual-produto-descricao h1{
+    font-weight: 500;
+    font-size:clamp(12px,3vw,40px);
+    margin-bottom: 2vw;
+    margin-top: 1vw;
+}
+
+.individual-produto-descricao p{
+    max-width: 1000px;
+    font-size: clamp(12px,2.5vw,25px);
+    line-height: 150%;
+}
+
+@media (max-width:600px){
+    .individual-produto{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+    .individual-produto .individual-produto-img-container {
+        width: 100vw;
+        height: 400px;
+        margin-bottom: 3vw;
+    }
+    .individual-produto-info{
+        width: 100%;
+        gap:2vw;
+    }
+    .individual-produto-descricao h1{
+        margin-top: 7vw;
+    }
+    .individual-produto-info input{
+        /* Rectangle 203 */
+
+        box-sizing: border-box;
+
+        width: 35px;
+        height: 16px;
+
+        background: #D9D9D9;
+        border: 1px solid #000000;
+        border-radius: 10px;
+    }
+
+    .individual-produto-info .promocao-frete{
+        display: none;
+    }
+
+    .individual-produto-info p{
+        display: none;
+    }
+
+    .individual-produto-info h3{
+        color:black
+    }
+
+    .individual-produto-info h3 span{
+        display: none;
+    }
+
+    .individual-produto-info button{
+        width: 100%;
+        max-height: 72px;
+        padding: 3vw 0;
+        margin-top: 2vw;
+    }
+    
+}
+
+.recomendados3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.recomendados2{
+    display: none;
+}
+
+@media(max-width:540px){
+    .recomendados3{
+        display: none;
+    }
+    .recomendados2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.title-recomendados{
+    font-family: var(--montserrat-font);
+    font-weight: 500;
+    font-size: clamp(15px,3.5vw,40px);
+    align-self: flex-start;
+    margin-left: 7.5%;
+    margin-bottom: 2%;
+
+}
+
+.individual-produto-img:hover{
+    cursor: pointer;
+}
+
+
+.individual-produto-img-container {
+  position: relative;
+  width: 52%;
+  height:40vw;
+  max-height: 477px;
+  /* width: 736px;
+  height: 477px; */
+  overflow: hidden;
+}
+
+.individual-produto-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.individual-produto-img.next {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.individual-produto-img.entering {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.individual-produto-img.exiting {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+#qtd-input-label{
+    font-size: clamp(10px,2vw,22px);
+}
+#qtd-input{
+    font-size: clamp(10px,1.5vw,23px);
+    font-weight: 600;
+    border: 1.5px solid black;
+    padding-left: 3%;
+    padding-right: 3%;
+}

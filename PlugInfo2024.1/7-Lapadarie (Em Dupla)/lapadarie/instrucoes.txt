@@ -1,0 +1,8 @@
+seguir documentação do express 
+em seguida do prisma 
+
+baixar types do expres, node -D
+
+$ npm install typescript @types/react @types/node -D
+
+

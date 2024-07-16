@@ -1,0 +1,23 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Fila {
+  id          Int      @id @default(autoincrement())
+  nome        String   @unique
+  totalPaes   Int
+  totalAPagar Float
+  entrada     DateTime @default(now())
+}
+
+model Contador {
+  id              Int      @id @default(autoincrement())
+  pessoasNaFila   Int      @default(0)
+  paesVendidos    Int      @default(0)
+  totalEntrada    Float    @default(0)
+}

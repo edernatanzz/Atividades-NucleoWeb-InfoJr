@@ -1,0 +1,20 @@
+:root {
+  --colorheader:#965A1B;
+  --colorEntrada: #5F3305;
+  --colorbackground: #E5CF94;
+  --colorBordForms:#DB1E1E;
+  --colorbackgroundclaro: #E5CF9480;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+  background-color: var(--colorbackground);
+
+  
+}

@@ -1,0 +1,30 @@
+// prisma/schema.prisma
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db" // Corrigido o caminho do arquivo do banco de dados
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id        Int       @id @default(autoincrement())
+  name      String
+  email     String    @unique
+  password  String
+  createdAt DateTime  @default(now())
+  favorites Favorite[]
+}
+
+model Favorite {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  movieId   Int  
+  createdAt DateTime @default(now())
+
+  user      User     @relation(fields: [userId], references: [id])
+
+  @@unique([userId, movieId]) 
+}

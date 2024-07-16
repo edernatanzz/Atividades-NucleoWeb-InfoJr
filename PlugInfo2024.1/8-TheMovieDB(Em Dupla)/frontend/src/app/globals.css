@@ -1,0 +1,95 @@
+body{
+    background-color: black;
+}
+
+.logoNetflix img{
+width: 200px;
+height: 100px;
+}
+
+.login{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 700px;
+}
+
+.login h3{
+    display: flex;
+    align-items: none;
+    color: white;
+}
+.login h2{
+    color: white;
+}
+
+.login input{
+    height: 30px;
+  margin-bottom: 10px;
+  background-color: hsl(0, 0%, 96%);
+  border-style: none;
+  padding-left: 20px;
+  border-radius: 5px;   
+}
+
+
+.inferior{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.inferior button{
+    border-style: none;
+    background-color: red;
+    color: white;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+   
+}
+
+.Black{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 505px;
+    height: 287px;
+    margin-left: 570px;
+    margin-top: 200px;
+    border-style: none;
+  }
+
+  .Formulario{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 10px;
+  }
+  .Formulario input{
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: hsl(0, 0%, 96%);
+    border-style: none;
+    padding-left: 20px;
+    border-radius: 5px;
+  }
+
+  .Botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Botao button{
+    width: 180px;
+    height: 40px;
+   background-color: black;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    
+   }
+
+   .Titulo{
+    padding-left: 30px;
+   }
