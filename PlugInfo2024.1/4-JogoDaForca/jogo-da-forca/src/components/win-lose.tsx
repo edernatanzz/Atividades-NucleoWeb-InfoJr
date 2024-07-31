@@ -1,4 +1,10 @@
+import React from 'react';
 import styled from 'styled-components';
+
+interface MessageProps {
+  onClose: () => void;
+  children: React.ReactNode;
+}
 
 const Overlay = styled.div`
   position: absolute;
@@ -6,11 +12,10 @@ const Overlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
- 
 `;
 
 const MessageContent = styled.div`
@@ -20,7 +25,7 @@ const MessageContent = styled.div`
   z-index: 1;
 `;
 
-const Message = ({ onClose, children }) => {
+const Message: React.FC<MessageProps> = ({ onClose, children }) => {
   return (
     <Overlay>
       <MessageContent>

@@ -4,7 +4,7 @@ import Keyboard from './components/keyboard';
 import HangmanWord from './components/hangmanword';
 import Message from './components/win-lose';
 import Placar from './components/placar';
-import PlayerForm from './components/forms'; 
+
 import styled from 'styled-components';
 import { useCallback, useEffect, useState } from 'react';
 
@@ -29,7 +29,7 @@ const HangmanPart = styled.div`
 const words = ['python', 'java', 'javascript'];
 
 function App() {
-  const [playerName, setPlayerName] = useState(''); // Adicione o estado do nome do jogador
+  
   const [wordToGuess, setWordToGuess] = useState(() => words[Math.floor(Math.random() * words.length)]);
   const [guessedLetters, setGuessedLetters] = useState<string[]>([]);
   const [showMessage, setShowMessage] = useState(false);
@@ -82,13 +82,10 @@ function App() {
     setShowMessage(false);
   };
 
-  const handleStartGame = (name: string) => {
-    setPlayerName(name);
-  };
 
   return (
     <Wrapper>
-      {!playerName && <PlayerForm onSubmit={handleStartGame} />} {/* Adicione o formulário do jogador */}
+      
       {showMessage && (
         <Message onClose={resetGame}>
           {vitoria ? (
@@ -105,18 +102,18 @@ function App() {
         </Message>
       )}
 
-      {playerName && (
+    
         <HangmanPart className='div-boneco'>
           <Placar vitórias={wins} derrotas={losses} />
           <h2>Jogo da Forca <br />
-           Usuario = {playerName}
+           
           </h2>
           
           <HangmanDrawing numberOfGuesses={incorrectGuesses.length} />
           <HangmanWord revelar={derrota} guessedLetters={guessedLetters} word={wordToGuess} />
         </HangmanPart>
-      )}
-      {playerName && <Keyboard letrasAtivas={correctGuesses} disabled={vitoria || derrota} letrasInativas={incorrectGuesses} addGuessedLetter={addGuessedLetter} />}
+      
+       <Keyboard letrasAtivas={correctGuesses} disabled={vitoria || derrota} letrasInativas={incorrectGuesses} addGuessedLetter={addGuessedLetter} />
     </Wrapper>
   );
 }
